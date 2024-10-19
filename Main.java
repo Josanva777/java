@@ -1,30 +1,26 @@
-class vehiculo{
-    public void acelerar(){
-        System.out.println("el vehiculo esta acelerando");
+
+class calculadora {
+
+    public int sumar(int a, int b) {
+        return a + b;
+    }
+
+    public int sumar(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public double sumar(double a, double b) {
+        return a + b;
     }
 }
 
-class Auto extends vehiculo{
-    public void acelerar(){
-        System.out.println("el vehiculo esta acelerando a 100 km/h");
-    }
-}
+public class Main {
 
-class Motocicleta extends vehiculo{
-    public void acelerar(){
-        System.out.println("la moto esta acelerando a 250km/h");
-    }
-}
-
-public class Main{
     public static void main(String[] args) {
-        vehiculo miVehiculo;
+        calculadora calc = new calculadora();
 
-        miVehiculo = new Auto();
-        miVehiculo.acelerar();
-
-        miVehiculo = new Motocicleta();
-        miVehiculo.acelerar(); 
+        System.out.println("suma de 5 + 3 : " + calc.sumar(5, 3));
+        System.out.println("suma de 5 + 3 + 2: " + calc.sumar(5, 3, 2));
+        System.out.println("suma de 5.5  + 3.3 : " + calc.sumar(5.5, 3.3));
     }
 }
-
