@@ -36,7 +36,6 @@ class animal{
             animalUno = new vaca();
             animalUno.hacerSonido();
         }
-
 }
 
 
